@@ -1,10 +1,11 @@
+import os
 from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return "Hello, CI/CD World!"
+# Aquí puedes verificar si la variable de entorno PORT está definida
+port = os.getenv("PORT", 8080)  # Se usa 8080 como valor por defecto si no está configurado.
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(host='0.0.0.0', port=port)  # Usamos el puerto obtenido de la variable de entorno.
+
