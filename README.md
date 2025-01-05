@@ -1,5 +1,4 @@
 # Simple-CI-CD-WebApp
-# Flask WebApp with CI/CD
 
 Este proyecto consiste en una **Aplicación Web básica** desplegada usando **Flask**, un micro-framework para Python, con **CI/CD** (Integración Continua y Despliegue Continuo) implementado a través de Render. El objetivo del proyecto es demostrar un flujo simple desde el desarrollo local hasta el despliegue en la nube usando un pipeline de CI/CD.
 
